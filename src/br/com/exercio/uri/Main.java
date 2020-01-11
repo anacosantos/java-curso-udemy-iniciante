@@ -31,7 +31,8 @@ public class Main {
 //	    X = (float) (Math.pow(A, 2) * B);
 //	   
 //	    System.out.printf("A=" + "%.4f%n",X);
-//	    
+
+		
 	    
 		
 		
