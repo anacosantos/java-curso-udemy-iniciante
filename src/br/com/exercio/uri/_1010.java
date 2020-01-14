@@ -19,7 +19,14 @@ public class _1010 {
 		QP1 = sc.nextInt();
 		P1 = sc.nextDouble();
 		
-		V = P1 * QP1;
+		CP2 = sc.nextInt();
+		QP2 = sc.nextInt();
+		P2 = sc.nextDouble();
+		
+		
+		
+		
+		V = P1 * QP1 + P2 * QP2;
 				
 		System.out.printf("VALOR A PAGAR: R$ " +  "%.2f%n", V);
 		
@@ -28,9 +35,7 @@ public class _1010 {
 		sc.close();
 		
 		
-		
-		
-		
+				
 	}
 	
 }
