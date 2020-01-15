@@ -19,14 +19,13 @@ public class _1036 {
 		
 		if (a == 0 || delta < 0.0) {
 			System.out.println("Impossivel calcular");
-			}
-			else {
+		}else {
 			double r1 = (-b + Math.sqrt(delta)) / (2.0 * a);
 			double r2 = (-b - Math.sqrt(delta)) / (2.0 * a);
 			System.out.printf("R1 = %.5f%n", r1);
 			System.out.printf("R2 = %.5f%n", r2);
-			}
-			sc.close();
+		}
+		sc.close();
 		
 	}
 
