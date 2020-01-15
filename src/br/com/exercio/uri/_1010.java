@@ -34,6 +34,7 @@ public class _1010 {
 
 		sc.close();
 		
+		// ctrl + shift + o = importa classes
 		
 				
 	}
