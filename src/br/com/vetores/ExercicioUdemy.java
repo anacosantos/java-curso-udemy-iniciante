@@ -18,11 +18,12 @@ public class ExercicioUdemy {
 		//vector reading
 		for(int x = 0; x < N; x++) {
 			vet [x] = sc.nextDouble();
-		}
-		//print vector on screen	
-		for(int x = 0; x < N; x++) {
 			System.out.print(vet[x] + " ");
 		}
+		//print vector on screen	
+		//for(int x = 0; x < N; x++) {
+		//	System.out.print(vet[x] + " ");
+		//}
 			
 		System.out.println();
 		
