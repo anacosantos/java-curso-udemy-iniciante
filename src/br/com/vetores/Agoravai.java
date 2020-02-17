@@ -1,5 +1,7 @@
 package br.com.vetores;
 
+import java.util.Scanner;
+
 public class Agoravai {
 
 	// Bem vindo ao nosso sistema de lista de casamento.
@@ -24,6 +26,38 @@ public class Agoravai {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Bem vindo a lista de casamento Carol e Quiquito");
+		System.out.println("Digite o número de pessoas a serem convidadas.");
+		
+		int N = sc.nextInt();
+		String [] nomesDosConvidados = new String[N];
+		String[] convidadosConfirmados = new String[N];
+		
+		for(int x=0; x<N; x++) {
+			nomesDosConvidados [x] = sc.next();
+		}
+		
+		//numero de convidados é tamanho do array
+		int numeroConvidados = sc.nextInt();
+		String[] nomes = new String[numeroConvidados]; //para inicializar array passa o tamanho que o pc vai reservar o espaço p mim
+				
+		
+		for(int x = 0; x < numeroConvidados; x++) {
+			nomes[x] = sc.next();
+		}
+		
+		System.out.println(nomes[0]);
+		
+		for(int x = 0; x <numeroConvidados ; x++) {
+			System.out.println(nomes[x]);
+			
+		}
+		
+		sc.close();
+				
+		
 	}
 
 }
