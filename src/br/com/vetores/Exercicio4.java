@@ -14,15 +14,15 @@ public class Exercicio4 {
 		
 		int N = sc.nextInt();
 		double salario [] = new double [N];
-		
+		double reajuste [] = new double [N];
+		double reajustados = 0;
 		
 		for(int x = 0; x < N; x++) {
 			salario [x] = sc.nextDouble();
-			System.out.println(salario[x]);
-			
-			
+			reajuste [x] = sc.nextDouble();
+			reajustados = salario[x] + reajuste[x];
+			System.out.println(reajustados);
 		}
-			
 		
 		sc.close();
 		

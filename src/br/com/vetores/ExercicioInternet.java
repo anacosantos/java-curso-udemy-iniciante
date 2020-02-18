@@ -14,19 +14,32 @@ public class ExercicioInternet {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		int N = sc.nextInt();
-		String [] nomes = new String [N];
-		double notas [] = new double [N];
+		int n = sc.nextInt();
+		String [] nomes = new String [n];
+		double notas [] = new double [n];
 		double soma = 0;
+		double media = 0; 
 		
-		for(int x = 0; x < N; x++) {
+		
+		for(int x = 0; x < n; x++) {
 			nomes [x] = sc.next();
 			notas [x] = sc.nextDouble();
-			System.out.println(nomes [x] + notas [x]);
+			soma = soma + notas[x];
 		}
- //		double media = notas[x] / 2;
-	//	for()
+		for(int x = 0; x < n; x++) {
+			System.out.println(nomes[x] + " " + notas[x]);
+		}
 		
+		media = soma / n;
+		
+		System.out.println(media);
+		
+		
+		for(int x = 0; x < n; x++) {
+			if(notas[x] > media) {
+				System.out.println(nomes[x]);
+			}
+		}
 		
 		sc.close();
 		
