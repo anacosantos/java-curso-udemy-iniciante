@@ -16,7 +16,7 @@ public class ContaBancoNovo {
 	public void estadoAtual() {
 		System.out.println("--------------------------------");
 		System.out.println("Conta: "+this.getNumConta());
-		System.out.println("tipo: "+this.tipo);
+		System.out.println("tipo: "+this.getTipo());
 		System.out.println("Dono: "+this.getDono());
 		System.out.println("Saldo: "+this.getSaldo());
 		System.out.println("Status: "+this.getStatus());
