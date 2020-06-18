@@ -40,7 +40,7 @@ public class Lutador {
 		System.out.println("pesando "+this.getPeso()+"KG");
 		System.out.println(this.getVitorias()+" vitórias");
 		System.out.println(this.getDerrotas()+" derrotas e ");
-		System.out.println(this.getEmpates()+" empates.");
+		System.out.println(this.getEmpates() + (this.getEmpates()>1?" empates.":" empate."));
 	}
 	public void ganharLuta() {
 		this.setVitorias(this.getVitorias()+1);
