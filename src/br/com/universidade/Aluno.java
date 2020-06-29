@@ -1,6 +1,6 @@
 package br.com.universidade;
 
-public class Aluno {
+public class Aluno extends Pessoa{
 	
 	private int matricula;
 	private String curso;
@@ -22,6 +22,7 @@ public class Aluno {
 	}
 
 	public void pagarMensalidade() {
-		
+		String tipo = this.getSexo().toLowerCase().equals("m")?"o":"a";
+		System.out.println("Pagando mensalidade d" + tipo + " alun" + tipo + " "+ this.nome);
 	}
 }

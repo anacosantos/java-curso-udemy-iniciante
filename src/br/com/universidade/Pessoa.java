@@ -2,8 +2,8 @@ package br.com.universidade;
 
 public class Pessoa {
 
-	private String nome;
-	private int idade;
+	protected String nome;
+	protected int idade;
 	private String sexo;
 	
 	
@@ -43,5 +43,11 @@ public class Pessoa {
 	}
 
 
+	@Override
+	public String toString() {
+		return "Dados [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+	}
+
+	
 	
 }

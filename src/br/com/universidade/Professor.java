@@ -1,6 +1,6 @@
 package br.com.universidade;
 
-public class Professor {
+public class Professor extends Pessoa{
 	
 	private String especialidade;
 	private float salario;
