@@ -9,6 +9,11 @@ public class Zoo {
 		Ave a = new Ave();
 		Canguru c = new Canguru();
 		Cachorro k = new Cachorro();
+		Cobra j = new Cobra();
+		Tartaruga t = new Tartaruga();
+		GoldFish g = new GoldFish();
+		Arara e = new Arara();
+				
 		
 		/*m.setPeso(85.3f);
 		m.setIdade(2);
@@ -35,6 +40,7 @@ public class Zoo {
 		
 		m.setPeso(5.70f);
 		m.setIdade(8);
+		m.setCorPelo("Marrom");
 		m.setMembros(4);
 		m.locomover();
 		m.alimentar();
