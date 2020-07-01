@@ -1,12 +1,20 @@
 package VideoAula;
 
-public class Video {
+public class Video implements InterfaceVideo{
 
 	private String titulo;
 	private int avaliação;
-	private float views;
-	private float curtidas;
+	private int views;
+	private int curtidas;
 	private boolean reproduzindo;
+	
+	public Video(String titulo) {
+		this.titulo = titulo;
+		this.avaliação = 1;
+		this.views = 0;
+		this.curtidas = 0;
+		this.reproduzindo = false;
+	}
 	public String getTitulo() {
 		return titulo;
 	}
@@ -17,18 +25,20 @@ public class Video {
 		return avaliação;
 	}
 	public void setAvaliação(int avaliação) {
-		this.avaliação = avaliação;
+		int nova;
+		nova = (int)((this.avaliação + avaliação)/this.views);
+		this.avaliação = nova;
 	}
-	public float getViews() {
+	public int getViews() {
 		return views;
 	}
-	public void setViews(float views) {
+	public void setViews(int views) {
 		this.views = views;
 	}
 	public float getCurtidas() {
 		return curtidas;
 	}
-	public void setCurtidas(float curtidas) {
+	public void setCurtidas(int curtidas) {
 		this.curtidas = curtidas;
 	}
 	public boolean isReproduzindo() {
@@ -36,6 +46,26 @@ public class Video {
 	}
 	public void setReproduzindo(boolean reproduzindo) {
 		this.reproduzindo = reproduzindo;
+	}
+	@Override
+	public void play() {
+		this.reproduzindo = true;
+		
+	}
+	@Override
+	public void pause() {
+		this.reproduzindo = false;
+		
+	}
+	@Override
+	public void like() {
+		this.curtidas ++;
+		
+	}
+	@Override
+	public String toString() {
+		return "Video [titulo=" + titulo + ", avaliação=" + avaliação + ", views=" + views + ", curtidas=" + curtidas
+				+ ", reproduzindo=" + reproduzindo + "]";
 	}
 	
 	

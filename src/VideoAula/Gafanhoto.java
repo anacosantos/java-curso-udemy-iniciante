@@ -2,14 +2,20 @@ package VideoAula;
 
 public class Gafanhoto extends Pessoa{
 	
-	private int login;
+	public Gafanhoto(String nome, int idade, String sexo, String string) {
+		super(nome, idade, sexo);
+		this.login = string;
+		this.totAssistido = 0;
+	}
+
+	private String login;
 	private float totAssistido;
 	
-	public int getLogin() {
+	public String getLogin() {
 		return login;
 	}
 
-	public void setLogin(int login) {
+	public void setLogin(String login) {
 		this.login = login;
 	}
 
@@ -22,7 +28,13 @@ public class Gafanhoto extends Pessoa{
 	}
 
 	public void viuMaisUm() {
-		//
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Gafanhoto ["+ super.toString()  + "login=" + login + ", totAssistido=" +
+	totAssistido + "]";
 	}
 	
 }

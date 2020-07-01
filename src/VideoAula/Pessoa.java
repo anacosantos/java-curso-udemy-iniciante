@@ -1,12 +1,19 @@
 package VideoAula;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	protected String nome;
 	protected int idade;
 	protected String sexo;
-	protected boolean experiencia;
+	protected float experiencia;
 	
+	public Pessoa(String nome, int idade, String sexo) {
+		this.nome = nome;
+		this.idade = idade;
+		this.sexo = sexo;
+		this.experiencia = 0;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -31,15 +38,22 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 
-	public boolean isExperiencia() {
+	public float getExperiencia() {
 		return experiencia;
 	}
 
-	public void setExperiencia(boolean experiencia) {
+	public void setExperiencia(float experiencia) {
 		this.experiencia = experiencia;
 	}
 
 	protected void ganharExp() {
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", idade=" + idade +
+				", sexo=" + sexo + ", experiencia=" + experiencia + "]";
+	}
+	
 }
